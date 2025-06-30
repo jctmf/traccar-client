@@ -12,6 +12,7 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+// flutter_background_geolocation será incluído automaticamente via Flutter tooling
 val backgroundGeolocation = project(":flutter_background_geolocation")
 apply { from("${backgroundGeolocation.projectDir}/background_geolocation.gradle") }
 
